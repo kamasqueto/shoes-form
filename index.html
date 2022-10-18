@@ -28,7 +28,86 @@
       <header>
         <h1>Faça parte do nosso time</h1>
       </header>
-      <form action="POST"></form>
+      <form action="" method="get" class="column">
+        <div class="column">
+          <label for="name">Nome</label>
+          <input type="text" id="name" name="name" required>
+        </div> 
+
+        <div class="column">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required>
+        </div>
+        
+        <div class="column">
+          <label for="phone">Telefone</label>
+          <input type="tel" name="phone" id="phone" required>
+        </div>
+
+        <div class="column">
+          <label for="departments">Departamentos</label>
+          <select name="departments" id="">
+            <option value="" selected disabled hidden>Selecione...</option>
+            <option value="hr">Recursos Humanos</option>
+            <option value="sales">Vendas</option>
+            <option value="tech">Tecnologia</option>
+          </select>
+        </div>
+
+        <div class="">
+          <label for="disponibility">Disponibilidade</label>
+        </div>
+
+        <div class="checkboxes">
+          <div>
+            <input type="checkbox" id="full-time" name="full-time" value="true">
+            <label for="full-time" >Integral (8h)</label>
+          </div>
+          
+          <div>
+            <input type="checkbox" id="half-time" name="half-time" value="true">
+            <label for="half-time">Meio periodo (4h)</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="freela" name="freela" value="true">
+            <label for="freela">Freelancer</label>
+          </div>
+        </div>
+
+        <div>
+          <label for="">Qual a melhor forma para entrarmos em contato com você?</label>
+        </div>
+
+        <div class="checkboxes">
+          <div>
+            <input type="radio" name="contacts" id="email-radio" value="email">
+            <label for="email-radio">Email</label>
+          </div>
+
+          <div>
+            <input type="radio" name="contacts" value="call" id="call">
+            <label for="call">Ligação</label>
+          </div>
+
+          <div>
+            <input type="radio" name="contacts" id="whatsapp" value="whatsapp">
+            <label for="whatsapp">WhatsApp</label>
+          </div>
+        </div>
+
+        <div class="column">
+          <label for="message">Mensagem</label>
+          <textarea name="text-area" id="" cols="30" rows="10"></textarea>
+        </div>
+
+        <div>
+          <label for="upload">Curriculo</label>
+          <input type="file" value="upload" name="upload" id="upload" accept=".pdf" multiple>
+        </div>
+
+        <button type="submit">Enviar</button>
+      </form>
     </section>
     
     <aside>
